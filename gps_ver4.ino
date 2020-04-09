@@ -36,7 +36,8 @@ void loop(){
   //byteGPS=ss.read();         // Read a byte of the serial port
   //ss.println(  byteGPS);
   for(int l=0;l<100;l++){
-    byteGPS=FakeGPS[l];
+    byteGPS=FakeGPS[l];  
+    //byteGPS=ss_gps.read(); // if have real gps data use this
     //Serial.println(byteGPS);
     if (byteGPS == -1) {           // See if the port is empty yet
       delay(100); 
